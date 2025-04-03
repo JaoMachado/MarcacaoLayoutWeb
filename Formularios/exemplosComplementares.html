@@ -1,0 +1,64 @@
+<!-- 
+    Author: João Pedro Machado Silva - BV3032477 
+    Data da Implementação: 03/04/2025
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplos Complementares</title>
+</head>
+
+<body>
+    <h1>Exemplos de componentes em Formulários HTML</h1>
+
+    <form action="">
+        <p>Sexo</p>
+        <input type="radio" name="gender" value="male" checked="checked" /> Masculino<br />
+        <input type="radio" name="gender" value="female" /> Feminino<br />
+        <input type="radio" name="gender" value="other" /> Outros<br />
+        <!-- DROP DOWN LIST -->
+        <p>Carro</p>
+        <select name="carros">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br />
+        <!-- ÁREA DE TEXTO -->
+        <p>Deixe sua mensagem:</p>
+        <textarea name="message" rows="10" cols="30">Digite aqui sua mensagem
+        </textarea><br>
+        <input type="submit" value="Enviar" />
+        <input type="button" onclick="alert('Clicou no botão!')" value="Clicar!" />
+
+        <p>Escolha seu navegador</p>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist><br /><br/><br/><br/>
+        <!-- SENHA -->
+        <p>Senha<br />
+            <input type="password" name="senha" />
+        </p>
+        <!-- CHECKBOX -->
+        <p>Opções de Filme</p>
+        <input type="checkbox" value="Drama" checked="checked">Drama</input><br />
+        <input type="checkbox" value="Ficção" checked="checked"> Ficção</input><br />
+        <input type="checkbox" value="Comédia" checked="checked"> Comédia</input><br />
+
+        <br><br>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
