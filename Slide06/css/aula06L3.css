@@ -1,0 +1,39 @@
+/*
+    Author: João Pedro Machado Silva - BV3032477 
+    Data da Implementação: 10/04/2025
+*/
+
+body{
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+header, footer {
+    background-color: lime;
+    padding: 30px;
+}
+
+.footerFixed{
+    position: absolute;
+    bottom: 0;
+    width: 98.4%;
+    padding: 15px;
+}
+
+.corpo{
+    display: flex;
+}
+
+aside{
+    background-color: blue;
+    padding-top: 400px;
+}
+
+main{
+    background-color: cyan;
+    width: 100%;
+    height: 408px;
+    padding-top: 408px;
+}
