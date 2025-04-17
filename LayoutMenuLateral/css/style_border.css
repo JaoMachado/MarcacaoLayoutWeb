@@ -1,0 +1,118 @@
+/*
+    Author: João Pedro Machado Silva - BV3032477 
+    Data da Implementação: 17/04/2025
+*/
+
+p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+
+.normal_dot{
+    border-style: dotted;
+}
+
+.large_dot{
+    border-style: dotted;
+    border-width: 4px;
+    margin-bottom: 25px;
+}
+
+.normal_dash{
+    border-style: dashed;
+}
+
+.large_dash{
+    border-style: dashed;
+    border-width: 4px;
+    margin-bottom: 25px;
+}
+
+.normal_solid{
+    border-style: solid;
+}
+
+.large_solid{
+    border-style: solid;
+    border-width: 4px;
+    margin-bottom: 25px;
+}
+
+.normal_double{
+    border-style: double;
+}
+
+.large_double{
+    border-style: double;
+    border-width: 4px;
+    margin-bottom: 25px;
+}
+
+.normal_groove{
+    border-style: groove;
+}
+
+.large_groove{
+    border-style: groove;
+    border-width: 4px;
+    margin-bottom: 25px;
+}
+
+.normal_ridge{
+    border-style: ridge;
+}
+
+.large_ridge{
+    border-style: ridge;
+    border-width: 4px;
+    margin-bottom: 25px;
+}
+
+
+.normal_inset{
+    border-style: inset;
+}
+
+.large_inset{
+    border-style: inset;
+    border-width: 4px;
+    margin-bottom: 25px;
+}
+
+.normal_outset{
+    border-style: outset;
+}
+
+.large_outset{
+    border-style: outset;
+    border-width: 4px;
+    margin-bottom: 25px;
+}
+
+.normal_none{
+    border-style: none;
+    margin-bottom: 25px;
+}
+
+.normal_hidden{
+    border-style: hidden;
+    margin-bottom: 25px;
+}
+
+.normal_mix{
+    border-style: dotted;
+    border-style: dashed;
+    border-style: solid;
+    border-style: double;
+}
+
+.large_mix{
+    border-style: dotted;
+    border-style: dashed;
+    border-style: solid;
+    border-style: double;
+    border-width: 4px;
+    margin-bottom: 25px;
+}
+
