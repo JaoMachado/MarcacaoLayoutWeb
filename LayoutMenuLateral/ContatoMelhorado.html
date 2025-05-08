@@ -1,21 +1,20 @@
 <!-- 
     Author: João Pedro Machado Silva - BV3032477 
-    Data da Implementação: 03/04/2025
+    Data da Implementação: 30/04/2025
 -->
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Formularios/css/style.css">
+    <link rel="stylesheet" href="css/style_contato_melhorado.css">
     <title>Contato</title>
 </head>
 
 <body>
-    <h2>Entre em contato conosco</h2>
-    <br>
+    <h1>Entre em contato conosco</h1>
 
     <div class="container">
         <form action="#" method="post">
@@ -23,17 +22,20 @@
             <br>
             <input type="text" id="nome" name="nome" required>
             <br>
-            Data de Nascimento:
-            <br>
-            <input type="date" id="data" name="data" required>
-            <br>
+            <div class="linha-flex">
+                Data de Nascimento:
+                <br>
+                <input type="date" id="data" name="data" required>
+                <br> 
+                Celular:
+                <br>
+                <input type="tel" id="celular" name="celular" pattern="^\d{2}-\d{4}-\d{4}$" placeholder="19-99122-8877" required>
+                <br>
+            </div>
+            
             E-mail:
             <br>
             <input type="email" id="email" name="email" required>
-            <br>
-            Celular:
-            <br>
-            <input type="tel" id="celular" name="celular" pattern="^\d{2}-\d{4}-\d{4}$" placeholder="19-99122-8877" required>
             <br>
             Mensagem:
             <br>
@@ -44,11 +46,6 @@
         </form>
     </div>
 
-    <footer class="footerFixed">
-        <p>&copy; 2025 Contato</p>
-        <p>Author: João Pedro Machado Silva</p>
-        <p> BV3032477</p>
-    </footer>
 </body>
 
 </html>
