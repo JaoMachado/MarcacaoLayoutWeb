@@ -15,13 +15,6 @@ header, footer {
     padding: 30px;
 }
 
-.footerFixed{
-    position: absolute;
-    bottom: 0;
-    width: 98.4%;
-    padding: 15px;
-}
-
 nav{
     background-color: blue;
     padding: 15px;
