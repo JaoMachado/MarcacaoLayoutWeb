@@ -5,8 +5,16 @@
 
 body{
     text-align: center ;
+    align-items: center;
+    padding: 80px;
+    background-color: lightgreen;
+}
+
+.container{
+    border-radius: 20px;
 }
 
 form{
     padding: 20px;
+    background-color:aliceblue;
 }
