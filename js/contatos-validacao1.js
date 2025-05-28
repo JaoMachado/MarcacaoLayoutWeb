@@ -16,7 +16,7 @@ function mDown(objBotao){
 function mUp(objBotao){
     objBotao.style.background = "lightgreen";
     objBotao.style.color = "white";
-    objBotao.value = "SOLTE";
+    objBotao.value = "lightgreen";
 };
 
 function minhaFuncao(){
