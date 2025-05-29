@@ -11,12 +11,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap-533.min.css"/>
     <link rel="stylesheet" href="/css/style_contato-strap.css">
-    <title>Contato com BootStrap</title>
+    <title>Contato com JQuery</title>
 </head>
 
 <body>
     <div class="container py-5 bg-success">
         <h3 class="text-center mb-4">Entre em contato conosco</h3>
+        <h6 class="text-center mb-4" id="saExemplos">CLIQUE PARA SUMIR/APARECER OS EXEMPLOS</h6>
+        <div id="exemplos">
+            <p id="someAparece">Clique aqui para esse parágrafo sumir e clique no titulo para aparecer novamente.</p>
+            <p id="mudaCorSVar">Pare o mouse aqui para ficar azul, tire para ficar vermelho e clique para ficar preto. OBS: Sem utilizar variável.</p>
+            <p id="alerta">Passe o mouse aqui para aparecer um alerta.</p>
+            <p id="mudaCorVar">Pare o mouse aqui para ficar azul, tire para ficar vermelho e clique para ficar preto. OBS: Utilizando variável.</p>
+            <p id="juncaoAcoes">Este parágrafo está sendo manipulado utilizando uma junção de ações.</p>
+            <p id="dom">Clique aqui e este parágrafo aparecerá em forma de alerta.</p>
+        </div>
+        
 
         <form name="contatosForm" action="" method="" onsubmit="return validateForm();">
 
@@ -45,7 +55,9 @@
                 <label for="msg" class="form-label">Mensagem: </label>
                 <textarea id="msg" name="usuario_msg" class="form-control" rows="4"></textarea>
             </div>
+
             <div class="d-flex justify-content-end gap-2">
+                <button type="button" class="btn btn-outline-secondary" name="JQuery" id="JQuery">JQUERY</button>
                 <input type="button" id="teste" class="btn btn-success" value="Testar" onmousedown="mDown(this)" onmouseup="mUp(this)"/>
                 <button type="reset" class="btn btn-outline-secondary">Limpar</button>
                 <button type="submit" class="btn btn-primary">Enviar sua mensagem</button>
@@ -53,7 +65,9 @@
         </form>
     </div>
 
+    <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/bootstrap-533.bundle.min.js"></script>
+    <script src="../js/contatos-jquery.js"></script>
     <script src="../js/contatos-validacao1.js"></script>
 </body>
 
