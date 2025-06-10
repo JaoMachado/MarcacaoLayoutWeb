@@ -1,6 +1,6 @@
 <!-- 
     Author: João Pedro Machado Silva - BV3032477 
-    Data da Implementação: 04/06/2025
+    Data da Implementação: 09/06/2025
 -->
 
 <!DOCTYPE html>
@@ -8,9 +8,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-533.min.css"/>
     <title>Exercício 2</title>
 </head>
-<body>
-    
+<body class="bg-light">
+
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="bg-white p-5 rounded shadow text-center w-100" style="max-width: 500px;">
+            <h1 class="mb-4">Exercício 2</h1>
+
+            <h3 class="mb-4">Data de Hoje:</h3>
+            <button class="btn btn-primary" onclick="mostrarData()">Mostrar Data</button>
+            <h4 id="data"></h4>
+
+            <div class="d-flex justify-content-center gap-5 mt-4">
+                <a href="bv3032477-ex1.html" class="btn btn-outline-secondary">Anterior</a>
+                <a href="bv3032477-ex3.html" class="btn btn-primary">Próximo</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap-533.bundle.min.js"></script>
+    <script src="../js/bv3032477-ex2.js"></script>
 </body>
 </html>
