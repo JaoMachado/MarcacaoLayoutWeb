@@ -4,8 +4,8 @@
 */
 
 function encontrarIndice(vetor, valor) {
-    for (let i = 0; i < vetor.length; i++) {
-        if (vetor[i].trim() === valor.trim()) {
+    for (var i = 0; i < vetor.length; i++) {
+        if (vetor[i] === valor) {
             return i;
         }
     }
@@ -13,13 +13,13 @@ function encontrarIndice(vetor, valor) {
 }
 
 function acharValor() {
-    const vetorInput = document.getElementById("vetor").value;
-    const valorInput = document.getElementById("valor").value;
+    var valorInput = parseInt(document.getElementById("valor").value);
+    var resultado = document.getElementById("resultado");
 
-    const vetor = vetorInput.split(",");
-    const indice = encontrarIndice(vetor, valorInput);
+    var vetor = [1, 5, 10, 17, 32, 40, 54, 70, 99];
+    
+    var indice = encontrarIndice(vetor, valorInput);
 
-    const resultado = document.getElementById("resultado");
     if (indice !== -1) {
         resultado.textContent = `Valor encontrado na posição: ${indice}`;
         resultado.className = "text-success";

@@ -4,12 +4,21 @@
 */
 
 function juntarComPontoEVirgula(vetor) {
-    return vetor.map(e => e.trim()).join(';');
+    var resultado = "";
+
+    for (var i = 0; i < vetor.length; i++) {
+        resultado += vetor[i];
+        if (i < vetor.length - 1) {
+            resultado += ";";
+        }
+    }
+
+    return resultado;
 }
 
 function converterParaString() {
-    let entrada = $('#strings').val();
-    let vetor = entrada.split(',');
+    var vetor = ["FAÇA", "DOS", "SEUS", "SONHOS", "UM", "OBJETIVO"];
+
     let resultado = juntarComPontoEVirgula(vetor);
     $('#resultado').text(resultado);
 }

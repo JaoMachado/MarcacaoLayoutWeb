@@ -4,9 +4,18 @@
 */
 
 function mostrarData() {
-    let d = new Date();
-    let dia = String(d.getDate()).padStart(2, '0');
-    let mes = String(d.getMonth() + 1).padStart(2, '0');
-    let ano = d.getFullYear();
+    var hoje = new Date();
+    var dia = hoje.getDate();
+    var mes = hoje.getMonth() + 1;
+    var ano = hoje.getFullYear();
+
+    if (dia < 10) {
+        dia = '0' + dia;
+    }
+
+    if (mes < 10) {
+        mes = '0' + mes;
+    }
+
     $('#data').text(`${dia}/${mes}/${ano}`);
 }
