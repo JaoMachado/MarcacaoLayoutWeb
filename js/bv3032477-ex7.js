@@ -1,19 +1,23 @@
 /*
     João Pedro Machado Silva - BV3032477
-    Data da Implementação: 10/06/2025
+    Data da Implementação: 13/06/2025
 */
+function inverterVetor(vetor){
+    var vetorInvertido = [];
+
+    vetorInvertido[0] = vetor[2];
+    vetorInvertido[1] = vetor[1];
+    vetorInvertido[2] = vetor[0];
+
+    return vetorInvertido;
+}
 
 function ordenarDecrescente() {
-    const entrada = $('#vetor').val();
-    const vetor = entrada.split(',').map(Number);
+    var vetor = [10, 20, 30];
 
-    if (vetor.length !== 3 || vetor.some(isNaN)) {
-        $('#resultado').text('Por favor, insira exatamente 3 números válidos separados por vírgula.');
-        return;
-    }
+    var vetorInvertido = inverterVetor(vetor);
 
-    const vetorOrdenado = [...vetor].sort((a, b) => b - a);
-    $('#resultado').text(`Vetor ordenado: [${vetorOrdenado.join(', ')}]`);
+    $('#resultado').text(`Vetor Invertido: [${vetorInvertido}]`);
 }
 
 
