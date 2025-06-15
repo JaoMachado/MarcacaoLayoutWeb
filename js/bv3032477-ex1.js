@@ -6,9 +6,11 @@
 function inverterString(str){
     var invertido = "";
 
+    // Invertendo a string
     for (var i = str.length - 1; i >= 0; i--) {
         invertido += str[i];
     }
+    
     return invertido;
 }
 
@@ -16,6 +18,7 @@ $(document).ready(function () {
     $("h3").click(function () {
         var texto = $("#stringInverter").text();
 
+        // Mostrando no resultado
         $(this).text(inverterString(texto));
     });
 }); 

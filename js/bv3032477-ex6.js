@@ -4,11 +4,13 @@
 */
 
 function copiarSemVogais() {
-    let original = $('#string').val();
-    let copia = "";                            
+    // Obtendo a string original e criando uma copia
+    var original = document.getElementById("string").value;
+    var copia = "";                            
 
+    // percorrendo a string verificando se é nao é vogal para adicionar a copia
     for (var i = 0; i < original.length; i++) {
-        var letra = original[i];
+        var letra = original.charAt(i);
         if (
             letra !== 'a' && letra !== 'e' && letra !== 'i' && letra !== 'o' && letra !== 'u' &&
             letra !== 'A' && letra !== 'E' && letra !== 'I' && letra !== 'O' && letra !== 'U' &&
@@ -21,6 +23,7 @@ function copiarSemVogais() {
         }
     }
 
+    // Exibindo no local correspondente
     $('#resultado').text(copia);
 }
 
