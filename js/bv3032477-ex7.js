@@ -2,6 +2,7 @@
     João Pedro Machado Silva - BV3032477
     Data da Implementação: 13/06/2025
 */
+
 function inverterVetor(vetor){
     // Criando o vetor invertido
     var vetorInvertido = [];

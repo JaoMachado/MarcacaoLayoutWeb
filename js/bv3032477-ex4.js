@@ -4,10 +4,14 @@
 */
 
 function juntarComPontoEVirgula(vetor) {
+    // Variavel do resultado
     var resultado = "";
 
+    // Fazendo a junção do valor do vetor com o ; na variavel resultado.
     for (var i = 0; i < vetor.length; i++) {
         resultado += vetor[i];
+
+        // Não põe ; no final
         if (i < vetor.length - 1) {
             resultado += ";";
         }
@@ -19,6 +23,6 @@ function juntarComPontoEVirgula(vetor) {
 function converterParaString() {
     var vetor = ["FAÇA", "DOS", "SEUS", "SONHOS", "UM", "OBJETIVO"];
 
-    let resultado = juntarComPontoEVirgula(vetor);
+    var resultado = juntarComPontoEVirgula(vetor);
     $('#resultado').text(resultado);
 }

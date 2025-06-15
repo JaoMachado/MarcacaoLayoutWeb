@@ -1,6 +1,6 @@
 /*
     João Pedro Machado Silva - BV3032477
-    Data da Implementação: 10/06/2025
+    Data da Implementação: 13/06/2025
 */
 
 $(document).ready(function () {

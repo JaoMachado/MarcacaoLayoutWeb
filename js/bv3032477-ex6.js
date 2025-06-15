@@ -11,6 +11,7 @@ function copiarSemVogais() {
     // percorrendo a string verificando se é nao é vogal para adicionar a copia
     for (var i = 0; i < original.length; i++) {
         var letra = original.charAt(i);
+
         if (
             letra !== 'a' && letra !== 'e' && letra !== 'i' && letra !== 'o' && letra !== 'u' &&
             letra !== 'A' && letra !== 'E' && letra !== 'I' && letra !== 'O' && letra !== 'U' &&
@@ -21,6 +22,7 @@ function copiarSemVogais() {
         ) {
             copia += letra;
         }
+        
     }
 
     // Exibindo no local correspondente
